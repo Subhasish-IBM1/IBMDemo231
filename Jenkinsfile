@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'task1'
-    }
-
-  }
+  agent any
   stages {
     stage('stage1') {
       steps {
@@ -12,8 +7,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    prd = 'IBMServer'
   }
 }
